@@ -1,0 +1,41 @@
+
+  
+  .header-toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+
+    
+  }
+  
+   .header-thumb {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .active {
+    background-color: #0000007d;
+  }
+
+  
+ .active .header-thumb {
+    transform: translateX(30px);
+    background-color: #000;
+  }
+
+  .dark {
+    background-color: rgba(128, 128, 128, 0.658);
+  }
+
+  /* =========================================================== */

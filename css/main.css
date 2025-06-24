@@ -1,0 +1,61 @@
+body {
+  background-image: url(../images/fon.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 1110px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 23px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.header > .container{
+    display: flex;
+    align-items: center;
+}
+
+.header-img {
+  width: 93px;
+  height: 38.145px;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  margin-left: 81px;
+  margin-right: 361px;
+}
+
+.header-link {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.header-text {
+  color: #000;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: auto;
+}
