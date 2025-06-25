@@ -34,15 +34,87 @@
         <button type="button" id="toggle" class="header-toggle">
             <div class="header-thumb"><img class="header-day" src="./images/day.png" alt="Денна тема"></div>
         </button>
-        <p class="header-text">Вітаємо,<span class="header-name">User</span>!</p>
+        <p class="header-text">Вітаємо, <span class="header-name" id="headerUserName">User</span>!</p>
       </div>
     </header>
     <main>
-        
+        <section class="hero">
+          <div class="container">
+          <h1 class="hero-title">Популярні інетрактивні ігри</h1>
+        </div>
+        </section>
+        <section class="age">
+          <div class="container">
+              <h2 class="age-title">Перевір в який рік ти народився</h2>
+               <div class="age-box">
+              <form class="age-form">
+                <input class="age-input" type="text" pattern="^\d{1,4}$" maxlength="4" placeholder="Введіть рік народження">
+                <button class="age-btn" type="submit"><img class="age-img" src="./images/lupa.svg" alt="lupa"></button>
+                
+              </form>
+              <p class="age-text">ти народився...</p>
+            </div>
+          </div>
+        </section>
+        <section class="number">
+          <div class="container">
+            <h2 class="number-title">Вгадай число, яке загадав комп’ютер</h2>
+            <div class="number-box">
+           <form class="number-form">
+             <input class="number-input" type="text" placeholder="Введіть число">
+             <button class="number-btn" type="submit"><img class="number-img" src="./images/lupa.svg" alt="lupa"></button>
+             
+           </form>
+           <p class="number-text">Введіть число від 1 до 5</p>
+         </div>
+          </div>
+        </section>
+        <section class="paper">
+          <div class="container">
+            <h2 class="paper-title">Камінь - ножиці - папір</h2>
+            <ul class="paper-list">
+              <li class="paper-item"><img src="./images/stone.png" alt="stone" class="paper-img"></li>
+              <li class="paper-item"><img src="./images/scissors.png" alt="scissors" class="paper-img"></li>
+              <li class="paper-item"><img src="./images/paper.png" alt="paper" class="paper-img"></li>
+            </ul>
+            <ul class="paper-items">
+              <li class="paper-itm">
+                <p class="paper-desk">Рахунок:</p>
+              </li>
+              <li class="paper-itm">
+                <p class="paper-desk">Комп’ютер-<span class="paper-scope">0</span></p>
+              </li>
+              <li class="paper-itm">
+                <p class="paper-desk">Ви-<span class="paper-scope">0</span></p>
+              </li>
+            </ul>
+            
+            <p class="paper-text">Починаєм гру</p>
+            <button class="paper-btn" type="button">Варіант комп’ютера</button>
+          </div>
+        </section>
 
           
     </main>
     <footer></footer>
+    <div class="modal" id="welcomeModal">
+      <button class="modal-close" type="button">
+        <img src="./images/close.png" alt="close">
+      </button>
+      <p class="modal-text">
+        Привіт! <br>
+        Ви потрапили на сайт інтерактивних ігор та завдань. Надіємось, що вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно провести час!
+      </p>
+      <p class="modal-name">Введіть своє ім’я:</p>
+      <form class="modal-form" id="nameForm">
+        <input class="modal-input" type="text" id="userNameInput" placeholder="Ваше ім’я..." required>
+        <button class="modal-btn" type="submit">Зберегти</button>
+      </form>
+    </div>
     <script type="module" src="./js/theme-switcher.js"></script>
+    <script type="module" src="./js/header-modal.js"></script>
+    <script type="module" src="./js/age.js"></script>
+    <script type="module" src="./js/number.js"></script>
+    <script type="module" src="./js/paper.js"></script>
   </body>
 </html>
