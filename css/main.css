@@ -100,10 +100,14 @@ text-align: center;
 }
 
 .age-box{
+  margin: 0 auto;
   margin-top: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 600px;
+  
+  /* justify-content: space-evenly; */
 }
 
 .age .container::after {
@@ -149,6 +153,19 @@ width: 215px;
   border: none;
 }
 
+.age-text{
+  color:  #7E7E7E;
+
+text-align: right;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 250px;
+margin-left: auto;
+}
+
 /* number */
 
 .number{
@@ -165,10 +182,12 @@ text-align: center;
 }
 
 .number-box{
+  margin: 0 auto;
   margin-top: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+width: 600px;
 }
 
 .number .container::after {
@@ -212,6 +231,10 @@ border: none;
   height: 100%;
   border-radius: 0px 20px 20px 0px;
   border: none;
+}
+
+.number-text{
+  margin-left: auto;
 }
 
 /* paper */
@@ -380,4 +403,60 @@ border-radius: 20px;
 background: #000;
 border: none;
 box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.calculeit{
+  padding: 36px 0;
+  
+}
+
+.calculeit-title{
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 36px;
+text-align: center;
+}
+
+.calculeit-box{
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  justify-content: center;
+}
+
+.calculeit-input-one, .calculeit-input-two, .calculeit-result{
+  border-radius: 20px;
+background: #D7D7D7;
+box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+color: #7E7E7E;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+padding: 10px 20px;
+border: none;
+}
+
+.calculeit-list{
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  width: 75px;
+  row-gap: 10px;
+  justify-content: space-between;
+}
+
+.calculeit-btn, .calculeit-equals{
+  border-radius: 50%;
+background: #000;
+box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+padding: 5px 10px;
+color: #FFF;
+display: flex;
+justify-content: center;
+align-items: center;
 }

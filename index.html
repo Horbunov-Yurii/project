@@ -52,7 +52,7 @@
                 <button class="age-btn" type="submit"><img class="age-img" src="./images/lupa.svg" alt="lupa"></button>
                 
               </form>
-              <p class="age-text">ти народився...</p>
+              <p class="age-text">Перевір в який рік ти народився</p>
             </div>
           </div>
         </section>
@@ -93,6 +93,23 @@
             <button class="paper-btn" type="button">Варіант комп’ютера</button>
           </div>
         </section>
+        <section class="calculeit">
+          <div class="container">
+            <h2 class="calculeit-title">Калькулятор</h2>
+            <div class="calculeit-box">
+              <input class="calculeit-input-one" type="number" placeholder="Введіть число">
+              <ul class="calculeit-list">
+                <li class="calculeit-item"><button class="calculeit-btn" type="button" data-operation="+">+</button></li>
+                <li class="calculeit-item"><button class="calculeit-btn" type="button" data-operation="*">*</button></li>
+                <li class="calculeit-item"><button class="calculeit-btn" type="button" data-operation="-">-</button></li>
+                <li class="calculeit-item"><button class="calculeit-btn" type="button" data-operation="/">/</button></li>
+              </ul>
+              <input class="calculeit-input-two" type="number" placeholder="Введіть число">
+              <button class="calculeit-equals" type="button">=</button>
+              <input class="calculeit-result" type="number" placeholder="Результат" readonly>
+          </div>
+          </div>
+        </section>
 
           
     </main>
@@ -116,5 +133,6 @@
     <script type="module" src="./js/age.js"></script>
     <script type="module" src="./js/number.js"></script>
     <script type="module" src="./js/paper.js"></script>
+    <script type="module" src="./js/calc.js"></script>
   </body>
 </html>
