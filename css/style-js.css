@@ -354,3 +354,49 @@
     font-weight: 400;
     line-height: normal;
   }
+
+  /* =============================== */
+  .slider {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .cards {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .card {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .buttons button {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }

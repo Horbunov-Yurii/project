@@ -28,3 +28,34 @@ leftBtn.addEventListener("click", () => {
 });
 
 updateSlider();
+
+
+// const members = document.querySelectorAll(".team__item");
+// const dots = document.querySelectorAll(".team__dot");
+// const left = document.querySelector(".team__btn--left");
+// const right = document.querySelector(".team__btn--right");
+// let index = 0;
+
+// function updateView() {
+//   members.forEach((el, i) => {
+//     const isActive = i === index;
+//     el.querySelectorAll(".team__img, .team__name, .team__role").forEach(
+//       (el) => {
+//         el.classList.toggle("team__hidden", !isActive);
+//       }
+//     );
+//     dots[i].classList.toggle("team__dot--active", isActive);
+//   });
+// }
+
+// left.addEventListener("click", () => {
+//   if (index > 0) index--;
+//   updateView();
+// });
+
+// right.addEventListener("click", () => {
+//   if (index < members.length - 1) index++;
+//   updateView();
+// });
+
+// updateView();
