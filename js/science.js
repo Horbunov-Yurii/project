@@ -16,6 +16,8 @@ const scientists = [
 const buttons = document.querySelectorAll(
   ".science__button, .science__button2"
 );
+
+
 const items = document.querySelectorAll(".science__item");
 
 const clearHighlight = () => {
